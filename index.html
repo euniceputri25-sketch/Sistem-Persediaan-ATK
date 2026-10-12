@@ -1,89 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistem Pembelian ATK</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="../js/config.js"></script>
-  <script src="../js/app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pembelian Persediaan ATK</title>
+
+    <meta http-equiv="refresh" content="0; url=sistem-pembelian-atk-isian-manual/sistem-pembelian-atk/front-end/html/index.html">
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Stationery<span>POS</span></h1>
-      <p>Sistem Pembelian Persediaan ATK</p>
-    </div>
-  </header>
+    <p>Membuka Sistem Pembelian Persediaan ATK...</p>
 
-  <main>
-    <section class="summary">
-      <article class="card"><p>Jenis Barang</p><h2 id="jumlahBarang">0</h2></article>
-      <article class="card"><p>Total Stok</p><h2 id="totalStok">0</h2></article>
-      <article class="card"><p>Total Pembelian</p><h2 id="totalPembelian">Rp0</h2></article>
-    </section>
-
-    <section class="card">
-      <h2>Transaksi Pembelian Baru</h2>
-      <form id="formPembelian">
-        <div class="form-grid">
-          <label>Nomor Pembelian
-            <input id="noPembelian" required placeholder="PB-2026-001">
-          </label>
-          <label>Tanggal Pembelian
-            <input type="date" id="tanggal" required>
-          </label>
-          <label>Nama Pemasok
-            <input id="pemasok" required maxlength="100" placeholder="Ketik nama pemasok">
-          </label>
-          <label>Nama Barang ATK
-            <input id="barang" maxlength="100" placeholder="Ketik nama barang">
-          </label>
-          <label>Satuan
-            <input id="satuan" maxlength="20" value="pcs" placeholder="pcs, rim, pak">
-          </label>
-          <label>Jumlah
-            <input type="number" id="jumlah" min="1" step="1" value="1" required>
-          </label>
-          <label>Harga Beli per Satuan (Rp)
-            <input type="number" id="harga" min="0" step="0.01" required>
-          </label>
-        </div>
-
-        <button type="button" id="tambahBarang">+ Tambahkan Barang</button>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Barang</th><th>Satuan</th><th>Jumlah</th><th>Harga</th><th>Subtotal</th><th>Aksi</th></tr></thead>
-            <tbody id="detailBarang"></tbody>
-          </table>
-        </div>
-        <div class="total">Total Pembelian: <strong id="grandTotal">Rp0</strong></div>
-        <button type="submit" id="simpan">Simpan Pembelian</button>
-        <p id="pesan" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-
-    <section class="card">
-      <h2>Riwayat Pembelian</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>No. Pembelian</th><th>Tanggal</th><th>Pemasok</th><th>Total</th></tr></thead>
-          <tbody id="riwayat"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Persediaan ATK</h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Kode</th><th>Nama Barang</th><th>Satuan</th><th>Harga Beli</th><th>Stok</th></tr></thead>
-          <tbody id="daftarStok"></tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <footer>Stationery POS · Sistem Informasi Pembelian ATK</footer>
+    <a href="sistem-pembelian-atk-isian-manual/sistem-pembelian-atk/front-end/html/index.html">
+        Klik di sini jika halaman tidak terbuka otomatis.
+    </a>
 </body>
 </html>
